@@ -9,6 +9,7 @@
             Console.WriteLine("1. Fibonacci Series");
             Console.WriteLine("2. Perfect Number");
             Console.WriteLine("3. Prime Number");
+            Console.WriteLine("4. Reverse Number");
             int ip = Convert.ToInt32(Console.ReadLine());
             switch (ip)
             {
@@ -23,7 +24,9 @@
                     PrimeNumber primeNumber = new PrimeNumber();
                     primeNumber.FindPrime();
                     break;
-
+                case 4:
+                    ReverseNumber.FindReverse();
+                    break;
             }
         }
     }
