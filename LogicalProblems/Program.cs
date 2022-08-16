@@ -8,6 +8,7 @@
             Console.WriteLine("Enter a number to select problem");
             Console.WriteLine("1. Fibonacci Series");
             Console.WriteLine("2. Perfect Number");
+            Console.WriteLine("3. Prime Number");
             int ip = Convert.ToInt32(Console.ReadLine());
             switch (ip)
             {
@@ -15,8 +16,12 @@
                     FibonacciSeries.Fibonacci();
                     break;
 
-                case 2;
+                case 2:
                     PerfectNumber.GetPerfectnumber();
+                    break;
+                case 3:
+                    PrimeNumber primeNumber = new PrimeNumber();
+                    primeNumber.FindPrime();
                     break;
 
             }
