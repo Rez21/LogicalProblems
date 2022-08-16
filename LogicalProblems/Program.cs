@@ -10,6 +10,8 @@
             Console.WriteLine("2. Perfect Number");
             Console.WriteLine("3. Prime Number");
             Console.WriteLine("4. Reverse Number");
+            Console.WriteLine("5. Coupon Number");
+
             int ip = Convert.ToInt32(Console.ReadLine());
             switch (ip)
             {
@@ -26,6 +28,9 @@
                     break;
                 case 4:
                     ReverseNumber.FindReverse();
+                    break;
+                case 5:
+                    CouponNumber.GetCouponNumber();
                     break;
             }
         }
