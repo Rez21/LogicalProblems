@@ -11,6 +11,7 @@
             Console.WriteLine("3. Prime Number");
             Console.WriteLine("4. Reverse Number");
             Console.WriteLine("5. Coupon Number");
+            Console.WriteLine("6. Stop Watch");
 
             int ip = Convert.ToInt32(Console.ReadLine());
             switch (ip)
@@ -31,6 +32,12 @@
                     break;
                 case 5:
                     CouponNumber.GetCouponNumber();
+                    break;
+                case 6:
+                    Stopwatch.PlayStopWatch();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input - Out of Range");
                     break;
             }
         }
